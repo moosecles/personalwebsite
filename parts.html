@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Document</title>
+    <script>
+        function lightsOut() {
+          var bodyelements= document.body;
+          bodyelements.classList.toggle("lights-out");
+          var headerelements= document.querySelectorAll('.pagelinks');;
+          headerelements.forEach((element) => element.classList.toggle("lights-out"));
+          var footerelements= document.querySelectorAll('.footerlinks');;
+          footerelements.forEach((element) => element.classList.toggle("lights-out"));
+        //   headerelements.classList.toggle("lights-out");
+        }
+    </script>
+</head>
+
+<header id="header">
+    <div id="logo">
+        <a href="main.html"><img src="https://static.thenounproject.com/png/91580-200.png" id="keyboardlogo" alt="Keyboard Logo" width="80" height="80">
+    </div>
+    <ul>
+        <li><a class="pagelinks" href = "main.html" alt = "homebutton" color ="black" >Home</a></li>
+        <li><a class="pagelinks" href = "about.html"alt = "aboutbutton">About</a></li>
+        <li><a class="pagelinks" href = "parts.html"alt = "partsandsizesbutton">Parts & Sizes</a></li>
+        <li><a class="pagelinks" href = "keyboards.html"alt = "keyboardsbutton">Keyboards</a></li>
+        <li><a class="pagelinks" href = "contact.html" alt = "contactbutton">Contact</a></li>
+    </ul>
+    <button id="darkmode" onclick ="lightsOut()"><img src="/images/DARKMODE.png" width="30" height = "30"></button>
+</header>
+
+<main> 
+    <div id="pagetitle">
+    PARTS & SIZES
+    </div>
+    <div id="content">
+        <div id="partsleftcontent">
+            <div id="rectangle"></div>
+            <img id="partsofkeyboard" src="images\PARTS.png" alt="Parts of Keyboard" width = "800">
+            <img id="sizesofkeyboard" src="images\SIZES.png" alt="Size of Keyboard" width = "400">
+        </div>
+        <div id="partsrightcontent">
+            <p>Without getting into too much detail, here is a quick breakdown of the parts. The parts of the keyboard that you see while you type are keycaps and the case. While the keycaps and case don’t affect much outside of the looks, there are cases where it can affect the overall sound. An example of this can be like buying a metal/ceramic keycap. Underneath the keycap is the PCB, or printed circuit board. This is essentially the brain behind the computer. It identifies what key you are pressing and sends that information to the computer. If you want, you can buy a PCB that is also compatible with lights.</p>
+            <p>The main goal for keyboards is sound. Reducing misc. Sounds such as rattling, clanking, and  shaking while keeping the clean sound from your switches. Switches are the bread and butter of sound. There are three types: Linear, Tactile, and Clicky. Linear is a smooth press , Tactile has a tiny bump in the middle of the press, and Clicky is just super loud.</p>
+            <p>There are many shapes and sizes of keyboards. The ones we are using right now are considered 100%. This means every key and every letter is on the keyboard. As you go down in size you lose keys but in return gain more space on your desk. If you have a small desk, getting a smaller keyboard may be beneficial for you. I personally have a 75% keyboard which is the function keys, the arrow keys, and a couple of special keys like page down, page up, and delete. It is all about finding what works best for you.</p>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footerlinks">
+        <a href="https://www.daskeyboard.com/blog/parts-of-a-mechanical-keyboard/" target="_blank"><img src="images\NUMBER1.png" width=25px height=25px></a>
+        <a href="https://switchandclick.com/keyboard-sizes/" target="_blank"><img src="images\NUMBER2.png" width=25px height=25px></a>
+    </div>
+</footer>
+</html>

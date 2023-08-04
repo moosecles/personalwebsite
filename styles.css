@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+body{
+    background-color: #F4F3EE;
+}
+/* Navbar Code */
+header {
+  height: 75px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#logo{
+  width: 20%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+#logo img{transition: transform 0.7s ease-in-out;}
+#logo img:hover{transform:rotate(360deg);}
+
+ul {
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height:100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+li {
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-size:20px;
+  margin-right: 75px;
+}
+:root {
+    --visited-link-color: black;
+}
+li a{
+    transition: all 0.1s ease-in-out;
+}
+li a:link { 
+    text-decoration: none;
+    color:inherit; 
+}
+li a:visited{color: var(--visited-link-color);}
+li a:hover { 
+    text-decoration: none;  
+    color: black; 
+    text-shadow: 1px 1px 0px #5a5a5a;
+}
+li a:active { text-decoration: none;     color:inherit;;  }
+
+/* End of Navbar code */
+
+/* Home page  */
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+#pagetitle{
+    width: 100%;
+    height: 100px;
+    font-size:75px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 15px;
+}
+#content{display:flex;}
+#homeleftcontent{
+    display:flex;
+    flex-direction:column;
+    width:65%;
+    justify-content: center;
+    align-items: center;
+}
+#homerightcontent{
+    display: column;
+    width:35%;
+    height: 75%;
+    padding-right: 150px;
+}
+p {
+    padding-top: 10%;
+    font-size:20px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#qk75{
+    position:absolute;
+    background-color: transparent;
+}
+
+#seamelody{
+    position:absolute;
+    background-color: transparent;
+}
+#qk75:hover{
+    opacity: 0;
+    transition: opacity .5s ease-out;
+}
+#backgroundvector{position:relative;}
+/* End of Home Page */
+
+
+
+/* FOOTER */
+
+.footerlinks{
+    width:100%;
+    background-color:#f1efe1;
+    position: fixed;
+    bottom: 0;
+    height: 5%;
+    justify-content: center;
+    text-align: center;
+}
+
+/* END OF FOOTER */
+
+
+
+
+
+/* About Page */
+.flippedbackgroundvector{
+    transform: scaleY(-1);
+    background-color: transparent;
+}
+#aboutleftcontent{
+    display:flex;
+    flex-direction:column;
+    width:50%;
+    justify-content: center;
+    align-items: center;
+    padding-left:15%;
+    padding-right: 5%;
+}
+
+#aboutimagecontainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#aboutimagecontainer #sf {
+    z-index: 1;
+}
+#aboutrightcontent{
+    display: column;
+    width:50%;
+    height: 75%;
+    padding-left:5%;
+    padding-right:15%;
+}
+
+#koi{
+    position:absolute;
+    background-color: transparent;
+}
+#sf{
+    position:absolute;
+    background-color: transparent;  
+}
+/* END OF ABOUT PAGE */
+
+
+
+
+/* PARTS & SIZES PAGE */
+
+#partsrightcontent{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+    height: 100%;
+    padding-right: 10%;
+}
+#partsrightcontent p {
+    font-size: 17px;
+}
+#rectangle{
+    background-color: white;
+    width:100%;
+    height:40%;
+
+}
+#partsleftcontent{
+    display:flex;
+    flex-direction:column;
+    width:70%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5%;
+
+}
+#partsleftcontent img{
+    background-color: transparent;
+    position: absolute;
+}
+#partsofkeyboard{padding-right: 10%;}
+#sizesofkeyboard{padding-left: 50%;}
+/* END OF PARTS & SIZES PAGE */
+
+
+
+
+
+/* KEYBOARD PAGE */
+#keyboardcontentcontainer{
+    display: flex;
+    flex-direction:column;
+    width:100%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding-left:20%;
+}
+
+#topkeyboard{
+    width:100%;
+    display: flex;
+
+}
+#centerkeyboard{
+    width:100%;
+    display: flex;
+}
+#bottomkeyboard{
+    width:100%;
+    display: flex;    
+}
+
+#keyboardtextcontent{
+    width: 40%;
+    float: inherit;
+}
+/* END OF KEYBOARDS PAGE */
+
+
+/* CONTACT ME PAGE */
+
+#contactmecontainer{
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+#email{
+    position:absolute;
+    padding-top:5.7%;
+    padding-left:5.7%;
+    background-color: transparent;
+}
+#mouse{
+    padding-bottom: 3%;
+}
+
+.lights-out{
+    background-color: black;
+    --visited-link-color: white;
+    color: white;
+}

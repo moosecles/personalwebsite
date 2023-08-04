@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Document</title>
+    <script>
+        function lightsOut() {
+          var bodyelements= document.body;
+          bodyelements.classList.toggle("lights-out");
+          var headerelements= document.querySelectorAll('.pagelinks');;
+          headerelements.forEach((element) => element.classList.toggle("lights-out"));
+          var footerelements= document.querySelectorAll('.footerlinks');;
+          footerelements.forEach((element) => element.classList.toggle("lights-out"));
+        //   headerelements.classList.toggle("lights-out");
+        }
+    </script>
+</head>
+
+
+<header id="header">
+    <div id="logo">
+        <a href="main.html"><img src="https://static.thenounproject.com/png/91580-200.png" id="keyboardlogo" alt="Keyboard Logo" width="80" height="80">
+    </div>
+    <ul>
+        <li><a class="pagelinks" href = "main.html" alt = "homebutton" color ="black" >Home</a></li>
+        <li><a class="pagelinks" href = "about.html"alt = "aboutbutton">About</a></li>
+        <li><a class="pagelinks" href = "parts.html"alt = "partsandsizesbutton">Parts & Sizes</a></li>
+        <li><a class="pagelinks" href = "keyboards.html"alt = "keyboardsbutton">Keyboards</a></li>
+        <li><a class="pagelinks" href = "contact.html" alt = "contactbutton">Contact</a></li>
+    </ul>
+    <button id="darkmode" onclick ="lightsOut()"><img src="/images/DARKMODE.png" width="30" height = "30"></button>
+</header>
+
+<main> 
+    <div id="pagetitle">
+    I WANT ONE.
+    </div>
+    <div id="content">
+        <div id="keyboardcontentcontainer">
+            <div id="topkeyboard">
+                <a href="https://www.keychron.com/products/keychron-k6-wireless-mechanical-keyboard" target="_blank"><img id="keychron" src="images\keychron.png" alt="Keychron Keyboard" width = 400 height=235></a>    
+                <div id="keyboardtextcontent"><p>If you don’t want to spend 6 hours building a keyboard that is totally understandable. Here are some keyboards at different price points. The first keyboard is a Keychron Q6, this is a great entry level keyboard that can be customized in the future if you want. There are keyboards that cost less but they aren't "hot-swappable." Being hot-swappable just means you can easily replace the switches without needing to buy other parts. </p></div>
+            </div>
+            <div id="centerkeyboard">
+                <div id="keyboardtextcontent"><p>The second keyboard on my list is the DAS Keyboard 4. It has a sleek look with a really cool volume knob on the top right. A main selling point is the sleek blank keycaps. While this may not be the best bang for your buck, I chose to include it because it was the first mechanical keyboard I ever wanted. The price range of this keyboard is around $160.  </p></div>
+                <a href="https://www.amazon.com/Das-Keyboard-Ultimate-Cherry-Mechanical/dp/B00JKQSGWE" target="_blank"><img id="das" src="images\DAS.png" alt="DAS Keyboard" width = 400 height=235></a>          
+            </div>
+            <div id="bottomkeyboard">
+                <a href="https://www.youtube.com/watch?v=N7OVagiblPo" target="_blank"><img id="flux" src="images\flux.png" alt="FLUX Keyboard" width = 400 height=235></a>  
+                <div id="keyboardtextcontent"><p>The last keyboard on this list is the FLUX keyboard. This keyboard recently became viral due to the GIANT touch screen that is built under the key caps. This keyboard has some crazy features and is the biggest innovation in keyboards that we have seen in the last couple of years. </p></div>
+            </div>
+        </div>
+    </div>
+</main>
+
+</html>
